@@ -4,4 +4,4 @@ from .models import Article
 
 @admin.register(Article)
 class EpisodeAdmin(admin.ModelAdmin):
-    list_display = ("title","image")
+    list_display = ("title","link")

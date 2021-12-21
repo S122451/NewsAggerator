@@ -8,7 +8,6 @@ class PodCastsTests(TestCase):
         self.Article = Article.objects.create(
             title="My Awesome Podcast Episode",
             link="https://myawesomeshow.com",
-            image="https://image.myawesomeshow.com",
         )
 
     def test_episode_content(self):

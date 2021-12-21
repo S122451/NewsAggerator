@@ -8,4 +8,5 @@ class HomePageView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context["Articles"] = Article.objects.filter().order_by("-pubdate")
         return context
